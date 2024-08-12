@@ -1,0 +1,167 @@
+:root {
+    /*========== Colors ==========*/
+   /*Color mode HSL(hue, saturation, lightness)*/
+   --white-color: hsl(0, 0%, 100%);
+   --secondary-color: hsl(0,0%, 45%);
+   --stone--100--color: hsl(30, 54%, 90%);
+   --stone--150--color: hsl(30, 18%, 87%);
+   --stone--600--color: hsl(30, 10%, 34%);
+   --stone--900--color: hsl(24, 5%, 18%);
+   --brown--800--color: hsl(14, 45%, 36%);
+   --rose--800--color:  hsl(332, 51%, 32%);
+   --rose--50--color:   hsl(330, 100%, 98%);
+   --h2-color: hsl(14, 45%, 36%);
+   --h3-color: hsl(332, 51%, 32%);
+   --body--font: 'Outfit', sans-serif;
+   --min-screen-size: 40rem;
+   --normal-font-size: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    font-size: var(--normal-font-size);
+    font-family: var(--body--font);
+    background-color: var(--white-color);
+}
+
+section h2 {
+    color: var(--brown--800--color);
+    font-family: 'Young Serif', sans-serif;
+}
+
+hr {
+    margin: 1rem 1.5rem;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    padding: 1.5rem;
+    font-family: 'Young Serif', sans-serif;
+}
+
+.description {
+    margin-inline: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.card-preparation {
+    background-color: var(--rose--50--color);
+    margin: 1.5rem;
+    padding: 1rem 1.5rem 0;
+    border-radius: .8rem;
+}
+
+.h3-preparation {
+    color: var(--rose--800--color);
+}
+
+.preparation__list {
+    padding: 1rem 1.5rem;
+}
+
+.preparation__list--item {
+    padding: 0.4rem 1rem;
+}
+
+.preparation__list--item::marker  {
+    color: var(--rose--800--color);
+}
+
+.ingredients {
+    margin: 1.5rem;
+}
+
+.ingredients__list {
+    padding: .5rem 1.5rem;
+}
+
+.ingredients__list--item::marker {
+    color: var(--brown--800--color);
+}
+
+.ingredients__list--item {
+    padding: .4rem 1rem;
+}
+
+.instructions {
+    margin: 1.5rem;
+}
+
+.instructions__list {
+    padding: .5rem 1.5rem;
+}
+
+.instructions__list--item {
+    padding: .4rem 1rem;
+}
+
+.instructions__list--item::marker {
+    color: var(--brown--800--color);
+    font-weight: bold;
+}
+
+.nutrition {
+    margin: 1.5rem;
+}
+
+.nutrition__description {
+    color: var(--secondary-color);
+    margin: 1rem 0;
+}
+
+.table__nutritional { 
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__row td {
+    border-bottom: 1px solid gainsboro;
+    padding: .5rem;
+}
+
+.table__row td.tb__column--key {
+    text-align: center;
+}
+
+.tb__column--value {
+    color: var(--brown--800--color);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: var(--stone--100--color);
+    }
+
+    .container {
+        background-color: var(--white-color);
+        margin: 2rem auto;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    .banner {
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .title {
+        padding-top: 0;
+    }
+
+
+}
